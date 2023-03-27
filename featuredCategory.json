@@ -1,0 +1,30 @@
+{
+    "products":[
+        {   
+           "name": "Headphones",  
+                "image": "img/headphones.jpg"
+                
+                
+       }, 
+       {    "name": "Backpack",   
+           "image": "img/bag.jpg"
+             
+  
+       },  
+       {   
+           "name": "Running Shoes", 
+          "image": "img/shoes.jpg"
+       },  
+       {   
+           "name": "Smartwatch",  
+              "image": "img/smartwatch.jpg"
+       },  
+       {   
+           "name": "Sunglasses", 
+            "image": "img/sunglasses.jpg"
+          }
+          
+  ]
+  
+  }
+  

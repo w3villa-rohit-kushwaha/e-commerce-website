@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "image_url": "img/bag.jpg",
+      "category": "Electronics"
+    },
+    {
+      "image_url": "img/headphones.png",
+      "category": "Clothing"
+    },
+    {
+      "image_url": "img/smartwatch.jpg",
+      "category": "Home & Kitchen"
+    },
+    {
+      "image_url": "img/headphones.png",
+      "category": "Clothing"
+    },
+    {
+      "image_url": "img/headphones.png",
+      "category": "Clothing"
+    }
+  ]
+}
+
+  

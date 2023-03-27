@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+    <head>
+             
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- *****************Bootstrap CDN********************************* -->
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- *******************Font awesome CDN **************************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- ******************Google Fonts********************************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gloock&family=Lobster&family=PT+Serif:ital@1&family=Poppins:ital,wght@1,200&family=Roboto:wght@100;400&family=Rubik&display=swap"
+            rel="stylesheet">
+
+            
+
+
+        <title>JSON example</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body >
+          
+
+
+       <!-- creating navbar-->
+          
+ 
+       <div class="unhideden container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fs-5">
+            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-address-card"></i>&nbsp;&nbsp;About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-square-question"></i>&nbsp;&nbsp;FAQ</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">🇬🇧 English</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-regular fa-dollar-sign"></i>&nbsp;&nbsp;US doller</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-regular fa-user"></i>Main Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;Delivery</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>   <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-address-card"></i>&nbsp;&nbsp;About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-square-question"></i>&nbsp;&nbsp;FAQ</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">🇬🇧 English</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-regular fa-dollar-sign"></i>&nbsp;&nbsp;US doller</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-regular fa-user"></i>Main Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;Delivery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    </div>
+    
+
+    <!--creating navbar footer-->
+    <section class="bg-light navbar_new mt-4">
+      <div class="container-fluid con">
+        <div class="row align-items-center top-nav">
+          <div class="col-md-2">
+            <div class="logo mt-2">
+              <h1><b>JOURNAL</b></h1>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="search-box">
+              <div class="input-group">
+                <div class="dropdown">
+                  <button  class="btn  p-3 btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All
+                  </button>
+                </div>
+                <input type="text" class="form-control" placeholder="Search..." id="search-box">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary"><i class="fa fa-search fa-2x"></i></button>
+                </div>
+              </div>
+              <ul id="search-results"></ul>
+            </div>
+          </div>
+          
+          <div class="col-md-3 iconcls mt-4">
+            <div class="login-wishlist">
+              <a id="login-id">
+                
+                
+                <button class="none mb-3" id="myBtn"><i class="fa-solid fa-user"></i>Login </button>
+
+                   <div id="myModal" class="modal_lgsp">
+                     <div class="modal-content_lgsp">
+                      <span class="close">&times;</span>
+                      <p id="login"><form id="login-form">
+                        <h2>Login</h2>
+                        <label for="username">Username</label>
+                        <input type="text" id="login-username" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="login-password" required>
+                        <button type="submit">Login</button>
+                        </form></p>
+                       </div>
+                </div>
+
+              
+            </a>
+            <a id="register-id">
+              
+                
+                <button class="none mb-3" id="myBtn2"><i class="fa-solid fa-pencil"></i>Register</button>
+
+                   <div id="myModal2" class="modal_lgsp">
+                     <div class="modal-content_lgsp">
+                      <span class="close2">&times;</span>
+                      <p id="register"><form id="register-form">
+                        <h2>Register</h2>
+                        <label for="username">Username</label>
+                        <input type="text" id="username-reg" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password-reg" required>
+                        <button type="submit">Register</button>
+                       </form></p>
+                       </div>
+                </div>
+            </a>
+
+            <a id="username-display" style="display: none;"></a>
+            <button id="logout-button" style="display: none;">Logout</button>
+               
+                <a id="wishlist-link">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>Wishlist</p>
+              </a>
+              
+              <div id="wishlist-modal" class="modal">
+                  <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h2>Wishlist</h2>
+                      <p id ="Wishlist-item">Your wishlist items go here.</p>
+                  </div>
+              </div>
+                       
+              <a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <p>Compare</p>
+              </a>
+            </div>
+          </div>
+    
+          <!-- 4.cart and price detils -->
+    
+          <div class=" col-md-3 cart-price">
+              <a id="item-counter"> $ 0 -</a>
+              <div>
+                  
+              </div>
+              <div id="currency-name">$</div>
+              <div id="total-cart-price">0.00</div>
+              <div class="cart-icon">
+                  <a><div id="additems"></div>
+                    <a href="#cart" class="btn btn-primary mb-8 btncart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        
+                       <div class="fa-solid fa-cart-shopping"></div>
+                      </a>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-end">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="cartModalLabel">Product Cart</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Cart items and details will go here -->
+                              <div id="product-add-to-cart"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      
+                  </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+     <div id=" container fixed-bottom-navbar mr-4">
+        <div class="bottom-navbar-menu-container ">
+        <!-- 1. menu  -->
+
+        <div class="nav-menu-container">
+          <div>
+            <a class="left-menu-icon-container">
+              <div class="hamburgur"><i class="fa-solid fa-bars"></i></div>
+              <p>All departments</p>
+              <div class="sale-container">Sale</div>
+            </a>
+          </div>
+          <div>
+            <a>
+              <p>multilevel</p>
+            </a>
+          </div>
+
+          <div class="mega-menu-container">
+            <a>
+              <p>Mega Menu</p>
+              <div class="new-container">New</div>
+            </a>
+          </div>
+          <div>
+            <a>
+              <p>custom </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. contact and blog button  -->
+
+        <div class="contact-number-blog-container">
+          <a href="">
+            <div class="contact-number-container">
+              <i class="fa-solid fa-phone-volume mb-3" ></i>
+              <p>1.800.555.6789</p>
+            </div></a>
+          <div class="blog-container">
+            <i class="fa-solid fa-blog"></i>
+            <p>BLOG</p>
+          </div>
+        </div>
+       </div>
+    </div>
+  
+
+
+  </header>
+
+ 
+  <!-- NAVBAR 1 -->
+  <!-- NAVBAR-MOBILE-VIEW -->
+  <div class=" navbar-expand-lg  plr bg-primary hidenav" >
+      
+      <div class=" d-flex justify-content-between topA py-2">
+          <div class="left d-flex">
+              <div class="d-flex ">
+                  <div class="nav-item">
+                      <a class="nav-link" href="#">
+                          <i class="fa-solid fa-user"></i>
+                          Login
+                      </a>
+                  </div>
+                  <div class="nav-item">
+                      
+                      <a class="nav-link " href="#">
+                          <i class="fa-solid fa-pen"></i>
+                          Register
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="right d-flex ">
+              <div class="d-flex">
+                  <div class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          $ Dollar
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">₹ Rupees</a></li>
+                          <li><a class="dropdown-item" href="#">€ Pound</a></li>
+                      </ul>
+                  </div>
+                  <div class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          🏴 English
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">🇯🇵 Japanese</a></li>
+                          <li><a class="dropdown-item" href="#">🇮🇳 Hindi</a></li>
+                      </ul>
+                  </div>
+                  
+              </div>
+          </div>
+  
+      </div>
+  </div>
+
+  <!-- NAVBAR-MOBILE-VIEW -->
+
+  <!-- NAVBAR 2 -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar hidenav-2 navbar-expand-lg bg-body-tertiary plr nb2" id="nav2">
+          <div class="container-fluid d-flex justify-content-between">
+            <div>
+              <a class="navbar-brand" href="#" id="journal">Journal</a>
+            </div>
+            <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="searchbar"
+                aria-controls="searchbar" aria-expanded="false" aria-label="Toggle navigation" order="2">
+                <span"><i class="fas fa-search"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="searchbar" id="search_here">
+                <form class="d-flex" role="search">
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    All
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                  <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+                  <button class="btn btn-primary" type="search"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+            <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation" order="1">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="icons">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-user"></i>
+                      <h6>Login</h6>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fa-solid fa-pencil"></i>
+                      <h6>Register</h6>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="far fa-heart"></i>
+                      <h6>Wishlist</h6>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-repeat"></i>
+                      <h6>Compare</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cart"
+                aria-controls="#cart" aria-expanded="false" aria-label="Toggle navigation" order="1">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+     
+  <!-- NAVBAR 2 -->
+<div class="conatiner row" id="full">
+       <div class="container">
+  <div class="row">
+    <div class="col-md-8 color">
+    <div class="container1">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/phone.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <button class="btn button1 btn-primary">Watch</button>
+                  <h1>Best Watch options at any resolution</h1>
+                  <button class="btn button2 btn-secondary">learn more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/bag.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1> Mobile options at any at resolution</h1>
+                  <button class="btn button2 btn-secondary">learn more <i class="fa-solid fa-arrow-right"></i></button>                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/headphones.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Best Watch options at any resolution</h1>
+                  <button class="btn button2 btn-secondary">learn more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+    </div>
+   
+</div>
+
+<div class="col-md-4">
+    <div class="container conter">
+    <div class="slidee slide1">
+        <div class="caption mt-2">
+            <h1> <div class="text-over-card-image mt-2">
+              <p class="paragraph" >WEARABLES</p>
+              <h2>Intelligent & Durable Design</h2>
+            </div></h1>
+        
+        </div>
+    </div>
+    <div class="slidee slide2">
+        <div class="caption mt-2">
+            <h1> <div class="text-over-card-image">
+              <p class="paragraph">COMPUTER</p>
+              <h2>Intelligent & Durable Design</h2>
+            </div></h1>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<section class="services-container container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="free-shiping-container text-center">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+        </div>
+        <div class="text">
+          <h2>Free Shipping</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="free-shiping-container text-center">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+          </div>
+        </div>
+        <div class="text">
+          <h2>Delivery Ship</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="free-shiping-container text-center">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+        </div>
+        <div class="text">
+          <h2>Return Policy</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-2 mb-4">
+      <div class="free-shiping-container text-center">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fa-solid fa-cube"></i>
+          </div>
+        </div>
+        <div class="text">
+          <h2>Less price</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container text-center  mt-4 ">
+  <h1>Why Buy from us ?</h1><hr>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque nesciunt iure quasi maiores
+      perferendis
+      iste labore inventore numquam itaque!</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+      <div id = "product-list-3" class="text-center d-flex">
+         
+      </div>
+
+</div>
+       
+          <!--Product cart-->
+          <div class="text-center container featured-heading m-5">
+           <h1> Featured Products</h1><hr>
+          </div>
+          <div class="container text-center">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi minima rerum architecto. Itaque repudiandae aliquam qui maxime earum ullam tempora fugiat. 
+            Vitae facilis soluta explicabo sint dolores ratione praesentium.</p>
+          </div>
+          <div class="categories-navigation-container container-fluid">
+            <div class="row">
+            <a class="col-md-3">
+                <p class="active-why-buy">
+                    top categories
+                </p>
+            </a>
+
+            <a class="col-md-3">
+                <p>electronics</p>
+            </a>
+            <a class="col-md-3">
+                <p>beauty</p>
+            </a>
+            <a class="col-md-3">
+                <p>fashiion</p>
+            </a>
+          </div>
+        </div>
+           <div id="product-list" class="d-flex"></div>
+           
+
+
+
+          
+
+        <section class="container-fluid  bg-light m-5 text-center">
+
+                <h1>Featured Category</h1><hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni laboriosam accusantium provident quod
+                    voluptas? Natus earum quasi labore quidem vel?</p>
+                    <div class="categories-navigation-container container-fluid">
+                      <div class="row">
+                      <a class="col-md-3">
+                          <p class="active-why-buy">
+                              top categories
+                          </p>
+                      </a>
+          
+                      <a class="col-md-3">
+                          <p>electronics</p>
+                      </a>
+                      <a class="col-md-3">
+                          <p>beauty</p>
+                      </a>
+                      <a class="col-md-3">
+                          <p>fashiion</p>
+                      </a>
+                    </div>
+                  </div>
+                      <div id="product-list-2" class="d-flex"></div>
+                  </div>
+                 
+                    
+                </div>
+                 
+          
+                <div id="searcheditem"></div>
+        </section>
+        <section>
+            <div class="container-fluid bg-light text-center p-4">
+                <h1> Shop by brands </h1><hr>
+                <div id="product-list-4" class="d-flex">
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- improved gallery modules -->
+        <section>
+            <div class="container-fluid m-4 improved text-center p-4">
+                <h1>Improve Gallery Module</h1><hr>
+
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, distinctio nam nemo reiciendis
+                    expedita nihil iusto, exercitationem sint accusamus ipsum saepe! Nam obcaecati explicabo hic, ab
+                    officia
+                    saepe dolorum blanditiis
+                    laudantium aut expedita consectetur modi facilis iusto sequi assumenda rem ipsum dolor sit amet </p>
+
+                <div class="row brands p-4">
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/large_vitalvale.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/logo-envato.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/logo-givve.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/logo-givve.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/large_vitalvale.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="container text-center p-4">
+                <h1>From our blog</h1><hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique expedita facilis incidunt tempora
+                    cupiditate, enim quod nisi sed. Magnam, facere.
+                </p>
+
+                <div class="categories-navigation-container">
+                  <a>
+                      <p class="active-why-buy">
+                          Top post
+                      </p>
+                    </a>
+                  <a>
+                      <p>Old post </p>
+                  </a>
+              </div>
+                <div class="row from-our-blog ">
+                    <div class="col-md-4 ">
+                        <div class="card h-100">
+                            <img src="img/bag.jpg" height="400px">
+                            <div class="card-body ">
+                                <div class="admin-icon pt-3">
+                                    <i class="fa-solid fa-user "></i>
+                                    <p>admin</p>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <p>38</p>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>19340</p>
+                                </div>
+                                <h5 class="card-title pt-3">Another Blog post</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/shoes.jpg" height="400px">
+                            <div class="card-body">
+                                <div class=" admin-icon pt-3">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>admin</p>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <p>38</p>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>19340</p>
+                                </div>
+                                <h5 class="card-title pt-3">Best Leather Bags</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional
+                                    content.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/smartwatch.jpg" height="400px">
+                            <div class="card-body ">
+                                <div class=" admin-icon pt-3">
+                                    <i class="fa-solid fa-user "></i>
+                                    <p>admin</p>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <p>38</p>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>1940</p>
+                                </div>
+                                <h5 class="card-title pt-3">Journal Blog is Here</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid what-people text-center p-4">
+                <h1>What people are saying about us?</h1><hr>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="quote-icon p-4">
+                                <i class="fa-solid fa-quote-left "></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta vero vitae mollitia
+                                quasi a
+                                numquam inventore consectetur amet nobis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="quote-icon p-4">
+                                <i class="fa-solid fa-quote-left "></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta vero vitae mollitia
+                                quasi a
+                                numquam inventore consectetur amet nobis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="quote-icon p-4">
+                                <i class="fa-solid fa-quote-left "></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta vero vitae mollitia
+                                quasi a
+                                numquam inventore consectetur amet nobis.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <div class="most-viewed container-fluid">
+          <div class="row">
+            <div class="container">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="text-white "><u>MOST VIEWED</u></h2>
+                <hr class="bg-danger" style="width: 150px; height: 1.5px; margin: 0;">
+              </div>
+              </div>
+              <div class="col-md-3 d-flex ">
+
+                  <div class="images">
+                      <img src="img/bag.jpg" height="120px" width="100px" />
+                  </div>
+                  <div class="name">
+                      <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                      <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                              class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                  </div>
+              </div>
+
+              <div class=" col-md-3 d-flex">
+
+                  <div class="images">
+                      <img src="img/headphones.jpg" height="120px" width="100px" />
+                  </div>
+                  <div class="name">
+                      <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                      <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                              class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                  </div>
+              </div>
+              <div class=" col-md-3 d-flex">
+
+                  <div class="images">
+                      <img src="img/shoes.jpg" height="120px" width="100px" />
+                  </div>
+                  <div class="name">
+                      <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                      <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                              class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                  </div>
+              </div>
+              <div class="col-md-3 d-flex">
+
+                  <div class="images">
+                      <img src="img/smartwatch.jpg" height="120px" width="100px" />
+                  </div>
+                  <div class="name">
+                      <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                      <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                              class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        
+  
+
+<!--social media icons-->
+<section class="social">
+  <p>
+      <a ><i class="fa-brands fa-facebook"></i></a>
+      <a ><i class="fa-brands fa-twitter"></i></a>
+      <a ><i class="fa-brands fa-instagram"></i></a>
+      <a > <i class="fa-brands fa-linkedin"></i></a>
+      <a > <i class="fa-brands fa-youtube"></i></a>
+      <a > <i class="fa-brands fa-skype"></i></a>
+      <a > <i class="fa-brands fa-google-plus-g"></i></a>
+
+  </p>
+</section>
+
+
+
+    <!-- Footer  -->
+
+    <footer class="body-spacer">
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+          <h2>About Us</h2>
+          
+          <ul>
+              <li><a >About Us</a></li>
+              <li><a >Delivery</a></li>
+              <li><a >Privacy Policy</a></li>
+              <li><a >Terms & Condition</a></li>
+              <li><a >Custom Links</a></li>
+          </ul>
+      </div>
+
+
+      <div class="col-md-3">
+          <h2>Customer Service</h2>
+         
+          <ul>
+              <li><a >Contact</a></li>
+              <li><a >Returns</a></li>
+              <li><a >Site Map</a></li>
+              <li><a >Brands</a></li>
+              <li><a >Unlimited Links</a></li>
+          </ul>
+      </div>
+
+
+
+      <div class="col-md-3">
+          <h2>My Account</h2>
+          
+          <ul>
+              <li><a >My Account</a></li>
+              <li><a >Order History</a></li>
+              <li><a >Affiliats</a></li>
+              <li><a >Newslatter</a></li>
+              <li><a >Gifts Certificates</a></li>
+          </ul>
+      </div>
+
+      <div class="col-md-3">
+          <h2>Newsletter</h2>
+          
+          <p class="para">Stay up to date with news and promotions by signing up for promotions</p>
+
+          <div class="input-container"> <input type="email" placeholder="Your email">
+              <button><i class="fa-regular fa-envelope"></i> Send</button>
+          </div>
+          <p> <input type="checkbox" name="" id=""> I have read and aggry to the <a >Privacy Policy</a></p>
+      </div>
+
+    </div>
+  </div>
+  </footer>
+</div>
+
+  <!-- Cart anchor tag with badge -->
+<!-- Button to trigger the modal -->
+<a href="#cart" class="btn btn-primary cart-anchor position-fixed" data-bs-toggle="modal" data-bs-target="#cartModal">
+   
+  <div id="view_prod">
+   View Product
+    <div id="additems" class="totalItem"></div>
+  </div>
+  </a>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-end">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Product Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Cart items and details will go here -->
+          <div id="product-add-to-cart"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid mt-4 copyrightcls">
+<div class="row">
+  <div class="col-md-6">
+  <h4 class="copy-store">Copyright © 2012,Your Store </h4>
+ </div>
+    <div class="col-md-6">
+    <ul class="payment ">
+      <li><img src="img/fashion.jpeg" width="100px"></li>
+      <li><img src="img/logo-givve.png" width="100px"></li>
+      <li><img src="img/phone.jpg" width="100px"></li>
+    </ul>
+</div>
+</div>
+</div>
+  </div>
+      </div>
+            <script src="script.js" ></script>
+    </body>
+</html>

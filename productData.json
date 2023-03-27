@@ -1,0 +1,67 @@
+{
+  "products":[
+      {   
+        "id":1,
+         "name": "Headphones",  
+            "price": 12.99,   
+            "preprice": 1222.8,   
+             "category": "Electronics",   
+              "brand": "Boat" ,
+              "sale": "50 % off",
+              "image": "img/headphones.jpg",
+              "tag": 55,
+              "trending": true
+              
+     }, 
+     {   
+      "id":2,
+     "name": "Backpack",   
+           "price": 49.99,   
+            "preprice": 33,  
+           "category": "Accessories",
+           "brand": "North Face",
+           "sale": "12 % off",
+           "image": "img/bag.jpg",
+           "tag": 30,
+           "trending": true
+
+     },  
+     {   "id":3,
+         "name": "Running Shoes", 
+        "price": 79.99,   
+          "preprice": 132,  
+        "category": "Footwear",    
+        "brand": "Nike" ,
+        "sale": "20 % off",
+        "image": "img/shoes.jpg",
+        "tag": 60,
+        "trending": true
+     },  
+     {   
+      "id":4,
+         "name": "Smartwatch",  
+         "price": 199.99,   
+           "preprice": 162,  
+          "category": "Electronics",  
+            "brand": "Apple" ,
+            "sale": "40 % off",
+            "image": "img/smartwatch.jpg",
+            "tag": 80,
+            "trending": false
+     },  
+     {   
+      "id":5,
+         "name": "Sunglasses", 
+          "price": 39.99, 
+            "preprice": 120.9,  
+          "category": "Accessories",    
+          "brand": "Ray-Ban" ,
+          "sale": "78 % off" ,
+          "image": "img/sunglasses.jpg",
+          "tag": 70,
+          "trending": true
+        }
+        
+]
+
+}
